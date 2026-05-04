@@ -1,0 +1,35 @@
+<section class="section split">
+    <div>
+        <span class="eyebrow">Comments</span>
+        <h1>Leave a message for the community.</h1>
+        <p class="lead">
+            Members can share ideas, feedback, event notes, and questions for the team.
+            Guest comments also work for the mockup.
+        </p>
+        <button class="button quiet" type="button" data-open-login>Log In as Member</button>
+    </div>
+    <div class="panel">
+        <form id="commentForm">
+            <label>
+                Your name
+                <input id="commentName" type="text" placeholder="Maya Johnson" value="__COMMENT_NAME__">
+            </label>
+            <label>
+                Your comment
+                <textarea id="commentText" placeholder="Write a thoughtful comment..." required></textarea>
+            </label>
+            <button class="button" type="submit">Post Comment</button>
+            <div class="status" id="commentStatus"></div>
+        </form>
+    </div>
+</section>
+
+<section class="section no-top">
+    <div class="section-head">
+        <span class="eyebrow">Community Feed</span>
+        <h2>Recent comments.</h2>
+    </div>
+    <div class="comment-list" id="commentList">
+        __COMMENTS__
+    </div>
+</section>

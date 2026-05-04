@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>__TITLE__</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header class="topbar">
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand" href="/">
+                <span class="brand-mark">GJ</span>
+                <span>Generation Justice</span>
+            </a>
+            <div class="links">
+                <a class="__ACTIVE_HOME__" href="/">Home</a>
+                <a class="__ACTIVE_ABOUT__" href="/about">Who We Are</a>
+                <a class="__ACTIVE_WORK__" href="/what-we-do">What We Do</a>
+                <a class="__ACTIVE_MEMBERSHIP__" href="/membership">Membership</a>
+                <a class="__ACTIVE_COMMENTS__" href="/comments">Comments</a>
+                <a class="__ACTIVE_BROADCAST__" href="/broadcast">Broadcast</a>
+                <button class="text-button __LOGIN_HIDDEN__" id="openLoginButton" type="button">Log In</button>
+                <button class="text-button __LOGOUT_HIDDEN__" id="logoutButton" type="button">Log Out</button>
+                <span class="__MEMBER_CHIP_CLASS__" id="memberChip">__MEMBER_CHIP_TEXT__</span>
+            </div>
+        </nav>
+    </header>
+
+    <div id="liveBroadcastBannerHost">
+        __BROADCAST_BANNER__
+    </div>
+
+    <main>
+        __CONTENT__
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <strong>Generation Justice</strong>
+            <span>Student-led membership, comments, campaigns, and broadcasts.</span>
+        </div>
+    </footer>
+
+    <div class="modal" id="loginModal" aria-hidden="true">
+        <div class="modal-card">
+            <div class="modal-head">
+                <div>
+                    <h2>Member Login</h2>
+                    <p>Use the demo account or join with a new membership.</p>
+                </div>
+                <button class="close" id="closeLoginButton" type="button" aria-label="Close login">x</button>
+            </div>
+            <form id="loginForm">
+                <label>
+                    Email
+                    <input id="loginEmail" type="email" value="demo@generationjustice.org" required>
+                </label>
+                <label>
+                    Password
+                    <input id="loginPassword" type="password" value="demo123" required>
+                </label>
+                <button class="button" type="submit">Log In</button>
+            </form>
+            <div class="status" id="loginStatus"></div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

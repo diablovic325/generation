@@ -1,0 +1,55 @@
+<section class="section page-intro">
+    <span class="eyebrow">Broadcast Center</span>
+    <h1>Run a broadcast from any view or page.</h1>
+    <p class="lead">
+        Logged-in members can publish a site-wide announcement. The latest running broadcast appears
+        at the top of every page.
+    </p>
+</section>
+
+<section class="section no-top">
+    <div class="broadcast-board">
+        <div class="broadcast-preview">
+            <span class="eyebrow light">Live Preview</span>
+            <h2 id="broadcastTitlePreview">Justice Weekly Live</h2>
+            <p id="broadcastMessagePreview">Prepare an announcement for members, students, and community partners.</p>
+            <small id="broadcastTargetPreview">All pages</small>
+            <button class="button" id="startBroadcastButton" type="button">Start Broadcast</button>
+        </div>
+        <div class="panel">
+            <form id="broadcastForm">
+                <label>
+                    Broadcast title
+                    <input id="broadcastTitle" type="text" value="Justice Weekly Live" required>
+                </label>
+                <label>
+                    Target view or page
+                    <select id="broadcastTarget">
+                        <option>Home page</option>
+                        <option>Who We Are page</option>
+                        <option>What We Do page</option>
+                        <option>Membership page</option>
+                        <option>Comments page</option>
+                        <option selected>All pages</option>
+                    </select>
+                </label>
+                <label>
+                    Message
+                    <textarea id="broadcastMessage" required>Prepare an announcement for members, students, and community partners.</textarea>
+                </label>
+                <button class="button secondary" type="submit">Update Preview</button>
+                <div class="status" id="broadcastStatus"></div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="section no-top">
+    <div class="section-head">
+        <span class="eyebrow">Broadcast History</span>
+        <h2>Recent broadcasts.</h2>
+    </div>
+    <div class="broadcast-list" id="broadcastList">
+        __BROADCASTS__
+    </div>
+</section>

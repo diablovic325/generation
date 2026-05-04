@@ -1,0 +1,77 @@
+<section class="section page-intro">
+    <span class="eyebrow">Membership</span>
+    <h1>Join, learn, comment, and broadcast.</h1>
+    <p class="lead">
+        Choose a membership level. The join form creates an account, logs you in,
+        and unlocks the broadcast button.
+    </p>
+</section>
+
+<section class="section no-top">
+    <div class="membership-grid">
+        <article class="tier">
+            <h2>Starter</h2>
+            <div class="price">Free</div>
+            <ul class="clean-list">
+                <li>Member profile</li>
+                <li>Comment access</li>
+                <li>Community updates</li>
+            </ul>
+            <button class="button secondary" type="button" data-plan-choice="Starter">Choose Starter</button>
+        </article>
+        <article class="tier highlight">
+            <h2>Member</h2>
+            <div class="price">$5/mo</div>
+            <ul class="clean-list">
+                <li>All workshops</li>
+                <li>Broadcast access</li>
+                <li>Campaign planning tools</li>
+            </ul>
+            <button class="button" type="button" data-plan-choice="Member">Choose Member</button>
+        </article>
+        <article class="tier">
+            <h2>Organizer</h2>
+            <div class="price">$12/mo</div>
+            <ul class="clean-list">
+                <li>Team pages</li>
+                <li>Priority broadcast review</li>
+                <li>Mentor sessions</li>
+            </ul>
+            <button class="button secondary" type="button" data-plan-choice="Organizer">Choose Organizer</button>
+        </article>
+    </div>
+</section>
+
+<section class="section no-top">
+    <div class="form-shell">
+        <div>
+            <span class="eyebrow">Join Form</span>
+            <h2>Create your membership.</h2>
+            <p>After joining, the site remembers you with a browser cookie.</p>
+        </div>
+        <form id="joinForm">
+            <label>
+                Full name
+                <input id="joinName" type="text" placeholder="Maya Johnson" required>
+            </label>
+            <label>
+                Email
+                <input id="joinEmail" type="email" placeholder="maya@example.com" required>
+            </label>
+            <label>
+                Password
+                <input id="joinPassword" type="password" minlength="4" placeholder="At least 4 characters" required>
+            </label>
+            <label>
+                Membership
+                <select id="joinMembership">
+                    <option>Starter</option>
+                    <option selected>Member</option>
+                    <option>Organizer</option>
+                </select>
+            </label>
+            <button class="button" type="submit">Create Membership</button>
+            <div class="status" id="joinStatus"></div>
+        </form>
+    </div>
+</section>
